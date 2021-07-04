@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ body{
+     
+    display: grid;
+    height: 100%;
+    place-items: center;
+    padding-top: 80px;
+ }
+ /* skills bar css*/
+ .skills-bar{
+width: 600px;
+background:whitesmoke;
+border-radius: 10px;
+padding: 40px 30px;
+box-shadow: 5px 5px 10px black;
+justify-content: center;
+align-items: center;
+
+ }
+ .skills-bar .bar{
+     margin: 25px 0;
+ }
+ .skills-bar .bar:first-child{
+margin-top: 0px;
+ }
+ .skills-bar .bar .info{
+     margin-bottom: 5px;
+ }
+ .skills-bar .bar .info span{
+     font-size: 17px;
+     font-weight: 500;
+ }
+ .skills-bar .bar .progress-line{
+     height: 10px;
+     width: 100%;
+     position: relative;
+     border-radius: 10px;
+     background:lightgray;
+     box-shadow: inset 0px 1px 1px lightslategrey;
+     animation: animate 1s cubic-bezier(1,0,0,5,1);
+     
+ }
+  .bar .progress-line span{
+      height: 100%;
+      width: 80%;
+      background: black;
+      position: absolute;
+      border-radius: 10px;
+  }
+  .progress-line.html span{
+    width: 90%;
+  } 
+  .progress-line.css span{
+    width: 70%;
+  }
+  .progress-line.js span{
+    width: 40%;
+  }
+  .progress-line.php span{
+    width: 50%;
+  }
+  .bar .progress-line span::before{
+      position: absolute;
+      content: "";
+      right: 0;
+      top: -10px;
+      height: 0%;
+      width: 0%;
+      border: 7px solid transparent;
+      border-bottom-width: 0px;
+      border-right-width: 0px;
+      border-top-color:black;
+
+  }
+  .bar .progress-line span::after{
+      position: absolute;
+      content: "80%";
+      right: 0;
+      top: -20px;
+      color: white;
+      font-size: 12px;
+      background:black;
+      padding: 1px 5px;
+      border-radius: 4px;
+  }
+
+  .progress-line.html span::after{
+    content: "90%";
+  } 
+  .progress-line.css span::after{
+    content: "70%";
+  }
+  .progress-line.js span::after{
+    content: "40%";
+  }
+  .progress-line.php span::after{
+    content: "50%";
+  }
+
+
+
+  /* media query for laptop,palmtop,smartphone view*/
+
+@media(max-width:1200px){
+    .skills-bar{
+        width: 300px;
+        background:whitesmoke;
+        border-radius: 10px;
+        padding: 20px 10px;
+        box-shadow: 5px 5px 10px black;
+        justify-content: center;
+        align-items: center;
+      
+
+    }
+    }
+@media(max-width:800px){
+    .skills-bar{
+        width: 240px;
+        background:whitesmoke;
+        border-radius: 10px;
+        padding: 20px 10px;
+        box-shadow: 5px 5px 10px black;
+        justify-content: center;
+        align-items: center;
+      
+
+    }
+}
+@media(max-width:600px){
+    .skills-bar{
+        width: 200px;
+        background:whitesmoke;
+        border-radius: 10px;
+        padding: 20px 10px;
+        box-shadow: 5px 5px 10px black;
+        justify-content: center;
+        align-items: center;
+      
+
+    }
+}
+
+
+@media(max-width:480px){
+    .skills-bar{
+        width: 130px;
+        background:whitesmoke;
+        border-radius: 10px;
+        padding: 20px 10px;
+        box-shadow: 5px 5px 10px black;
+        justify-content: center;
+        align-items: center;
+      
+
+    } 
+}
+
+
+
+  /*close section of skills bar css*/
